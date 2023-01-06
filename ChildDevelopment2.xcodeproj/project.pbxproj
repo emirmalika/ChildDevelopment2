@@ -7,18 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6878E8CD684D8A20055D2682 /* Pods_ChildDevelopment2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B4A430DF5D27696986BCA56 /* Pods_ChildDevelopment2.framework */; };
 		8F5DE29C295F1FD6007A53F9 /* ChildDevelopment2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5DE29B295F1FD6007A53F9 /* ChildDevelopment2App.swift */; };
 		8F5DE29E295F1FD6007A53F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5DE29D295F1FD6007A53F9 /* ContentView.swift */; };
 		8F5DE2A0295F1FDA007A53F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F5DE29F295F1FDA007A53F9 /* Assets.xcassets */; };
 		8F5DE2A3295F1FDA007A53F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F5DE2A2295F1FDA007A53F9 /* Preview Assets.xcassets */; };
+		8F7305B629657FEA00B33897 /* PopOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7305B529657FE900B33897 /* PopOverView.swift */; };
+		8F7305B82965ABDA00B33897 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F7305B72965ABDA00B33897 /* GoogleService-Info.plist */; };
+		8F7305BA2965B02B00B33897 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7305B92965B02A00B33897 /* LoginView.swift */; };
+		8F7305BC2965BC7E00B33897 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7305BB2965BC7E00B33897 /* HomeView.swift */; };
+		8F7305BE2965D2E800B33897 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7305BD2965D2E800B33897 /* SignUpView.swift */; };
+		8F7305C229671FBF00B33897 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7305C129671FBF00B33897 /* ViewModel.swift */; };
+		8F7305C4296720D100B33897 /* Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7305C3296720D000B33897 /* Games.swift */; };
+		8F7305C62967234C00B33897 /* PhysicalGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7305C52967234C00B33897 /* PhysicalGamesView.swift */; };
+		8F759AD929687AB1001718F4 /* EmotionalGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F759AD829687AB1001718F4 /* EmotionalGamesView.swift */; };
+		8F759ADB29687E5B001718F4 /* FMotorGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F759ADA29687E5B001718F4 /* FMotorGamesView.swift */; };
+		8F759ADE29687EB5001718F4 /* CreativeGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F759ADD29687EB5001718F4 /* CreativeGamesView.swift */; };
+		8F759AE029687EF0001718F4 /* SpeechGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F759ADF29687EF0001718F4 /* SpeechGamesView.swift */; };
+		8F759AE229687F26001718F4 /* SensoryGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F759AE129687F26001718F4 /* SensoryGamesView.swift */; };
+		8F759AE429687F74001718F4 /* HouseholdSkGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F759AE329687F74001718F4 /* HouseholdSkGamesView.swift */; };
+		8F90B0D3296869AE0094F4E7 /* LogicalGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F90B0D2296869AE0094F4E7 /* LogicalGamesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BE8A25221DC17B4246517C1 /* Pods-ChildDevelopment2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChildDevelopment2.debug.xcconfig"; path = "Target Support Files/Pods-ChildDevelopment2/Pods-ChildDevelopment2.debug.xcconfig"; sourceTree = "<group>"; };
+		6B4A430DF5D27696986BCA56 /* Pods_ChildDevelopment2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChildDevelopment2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		832E2B466BF78C74C2F66F00 /* Pods-ChildDevelopment2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChildDevelopment2.release.xcconfig"; path = "Target Support Files/Pods-ChildDevelopment2/Pods-ChildDevelopment2.release.xcconfig"; sourceTree = "<group>"; };
 		8F5DE298295F1FD6007A53F9 /* ChildDevelopment2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChildDevelopment2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F5DE29B295F1FD6007A53F9 /* ChildDevelopment2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildDevelopment2App.swift; sourceTree = "<group>"; };
 		8F5DE29D295F1FD6007A53F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8F5DE29F295F1FDA007A53F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F5DE2A2295F1FDA007A53F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8F7305B529657FE900B33897 /* PopOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverView.swift; sourceTree = "<group>"; };
+		8F7305B72965ABDA00B33897 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8F7305B92965B02A00B33897 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		8F7305BB2965BC7E00B33897 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8F7305BD2965D2E800B33897 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		8F7305C129671FBF00B33897 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		8F7305C3296720D000B33897 /* Games.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Games.swift; sourceTree = "<group>"; };
+		8F7305C52967234C00B33897 /* PhysicalGamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalGamesView.swift; sourceTree = "<group>"; };
+		8F759AD829687AB1001718F4 /* EmotionalGamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionalGamesView.swift; sourceTree = "<group>"; };
+		8F759ADA29687E5B001718F4 /* FMotorGamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMotorGamesView.swift; sourceTree = "<group>"; };
+		8F759ADD29687EB5001718F4 /* CreativeGamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativeGamesView.swift; sourceTree = "<group>"; };
+		8F759ADF29687EF0001718F4 /* SpeechGamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechGamesView.swift; sourceTree = "<group>"; };
+		8F759AE129687F26001718F4 /* SensoryGamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensoryGamesView.swift; sourceTree = "<group>"; };
+		8F759AE329687F74001718F4 /* HouseholdSkGamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdSkGamesView.swift; sourceTree = "<group>"; };
+		8F90B0D2296869AE0094F4E7 /* LogicalGamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogicalGamesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6878E8CD684D8A20055D2682 /* Pods_ChildDevelopment2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +72,8 @@
 			children = (
 				8F5DE29A295F1FD6007A53F9 /* ChildDevelopment2 */,
 				8F5DE299295F1FD6007A53F9 /* Products */,
+				ED390D2EB00742BE34F737C9 /* Pods */,
+				B582835A8D0078E6766D7955 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,8 +89,10 @@
 			isa = PBXGroup;
 			children = (
 				8F5DE29B295F1FD6007A53F9 /* ChildDevelopment2App.swift */,
-				8F5DE29D295F1FD6007A53F9 /* ContentView.swift */,
-				8F5DE29F295F1FDA007A53F9 /* Assets.xcassets */,
+				8F759AE52968AF48001718F4 /* Model */,
+				8F759AE62968AF53001718F4 /* View */,
+				8F759AE72968AF5B001718F4 /* ViewModel */,
+				8F759AE82968B066001718F4 /* SupportingFiles */,
 				8F5DE2A1295F1FDA007A53F9 /* Preview Content */,
 			);
 			path = ChildDevelopment2;
@@ -67,6 +106,76 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		8F759ADC29687E79001718F4 /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				8F759AD829687AB1001718F4 /* EmotionalGamesView.swift */,
+				8F759AE129687F26001718F4 /* SensoryGamesView.swift */,
+				8F759ADA29687E5B001718F4 /* FMotorGamesView.swift */,
+				8F90B0D2296869AE0094F4E7 /* LogicalGamesView.swift */,
+				8F7305C52967234C00B33897 /* PhysicalGamesView.swift */,
+				8F759ADD29687EB5001718F4 /* CreativeGamesView.swift */,
+				8F759ADF29687EF0001718F4 /* SpeechGamesView.swift */,
+				8F759AE329687F74001718F4 /* HouseholdSkGamesView.swift */,
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
+		8F759AE52968AF48001718F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8F7305C3296720D000B33897 /* Games.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8F759AE62968AF53001718F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8F5DE29D295F1FD6007A53F9 /* ContentView.swift */,
+				8F7305B92965B02A00B33897 /* LoginView.swift */,
+				8F7305BD2965D2E800B33897 /* SignUpView.swift */,
+				8F7305BB2965BC7E00B33897 /* HomeView.swift */,
+				8F7305B529657FE900B33897 /* PopOverView.swift */,
+				8F759ADC29687E79001718F4 /* Games */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8F759AE72968AF5B001718F4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8F7305C129671FBF00B33897 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8F759AE82968B066001718F4 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8F5DE29F295F1FDA007A53F9 /* Assets.xcassets */,
+				8F7305B72965ABDA00B33897 /* GoogleService-Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		B582835A8D0078E6766D7955 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B4A430DF5D27696986BCA56 /* Pods_ChildDevelopment2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED390D2EB00742BE34F737C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2BE8A25221DC17B4246517C1 /* Pods-ChildDevelopment2.debug.xcconfig */,
+				832E2B466BF78C74C2F66F00 /* Pods-ChildDevelopment2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F5DE2A6295F1FDA007A53F9 /* Build configuration list for PBXNativeTarget "ChildDevelopment2" */;
 			buildPhases = (
+				E98901A3959ED818FB1B10EE /* [CP] Check Pods Manifest.lock */,
 				8F5DE294295F1FD6007A53F9 /* Sources */,
 				8F5DE295295F1FD6007A53F9 /* Frameworks */,
 				8F5DE296295F1FD6007A53F9 /* Resources */,
+				4A7B9BB4C1C6811FD280335E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,18 +238,75 @@
 			files = (
 				8F5DE2A3295F1FDA007A53F9 /* Preview Assets.xcassets in Resources */,
 				8F5DE2A0295F1FDA007A53F9 /* Assets.xcassets in Resources */,
+				8F7305B82965ABDA00B33897 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A7B9BB4C1C6811FD280335E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChildDevelopment2/Pods-ChildDevelopment2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChildDevelopment2/Pods-ChildDevelopment2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChildDevelopment2/Pods-ChildDevelopment2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E98901A3959ED818FB1B10EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChildDevelopment2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8F5DE294295F1FD6007A53F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F759AE029687EF0001718F4 /* SpeechGamesView.swift in Sources */,
 				8F5DE29E295F1FD6007A53F9 /* ContentView.swift in Sources */,
 				8F5DE29C295F1FD6007A53F9 /* ChildDevelopment2App.swift in Sources */,
+				8F759AE229687F26001718F4 /* SensoryGamesView.swift in Sources */,
+				8F7305BA2965B02B00B33897 /* LoginView.swift in Sources */,
+				8F7305C4296720D100B33897 /* Games.swift in Sources */,
+				8F759AE429687F74001718F4 /* HouseholdSkGamesView.swift in Sources */,
+				8F90B0D3296869AE0094F4E7 /* LogicalGamesView.swift in Sources */,
+				8F759AD929687AB1001718F4 /* EmotionalGamesView.swift in Sources */,
+				8F7305BC2965BC7E00B33897 /* HomeView.swift in Sources */,
+				8F7305BE2965D2E800B33897 /* SignUpView.swift in Sources */,
+				8F7305C62967234C00B33897 /* PhysicalGamesView.swift in Sources */,
+				8F7305B629657FEA00B33897 /* PopOverView.swift in Sources */,
+				8F7305C229671FBF00B33897 /* ViewModel.swift in Sources */,
+				8F759ADE29687EB5001718F4 /* CreativeGamesView.swift in Sources */,
+				8F759ADB29687E5B001718F4 /* FMotorGamesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +429,7 @@
 		};
 		8F5DE2A7295F1FDA007A53F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BE8A25221DC17B4246517C1 /* Pods-ChildDevelopment2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -275,6 +444,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,6 +460,7 @@
 		};
 		8F5DE2A8295F1FDA007A53F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 832E2B466BF78C74C2F66F00 /* Pods-ChildDevelopment2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -304,6 +475,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
