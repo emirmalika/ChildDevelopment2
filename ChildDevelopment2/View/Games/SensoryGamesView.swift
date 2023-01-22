@@ -8,8 +8,29 @@
 import SwiftUI
 
 struct SensoryGamesView: View {
+   
+    @ObservedObject var model = ViewModel()
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    
+        List (model.sensoryGamesList) { item in
+            Text(item.description)
+        }.font(Font.custom("Noteworthy", size: 20))
+    
+            .navigationBarTitle("Сенсорика", displayMode: .inline)
+            .navigationBarBackButtonHidden(true)
+            .navigationBarItems(leading:
+                                    Button(action: {
+                presentationMode.wrappedValue.dismiss()
+            }, label: {
+                Image(systemName: "arrowshape.turn.up.backward")
+            }))
+        
+    }
+    
+    init() {
+        model.getData(section: "sensoryGames")
     }
 }
 

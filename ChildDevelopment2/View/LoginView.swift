@@ -20,7 +20,7 @@ struct LoginView: View {
         
 
         ZStack {
-            let colors = Gradient(colors: [Color(#colorLiteral(red: 0.8103023537, green: 0.9558948291, blue: 1, alpha: 1)), Color(#colorLiteral(red: 0.8383045374, green: 0.8378430055, blue: 1, alpha: 1)), Color(#colorLiteral(red: 1, green: 0.7675836037, blue: 0.9384834339, alpha: 1)), Color(#colorLiteral(red: 1, green: 0.7901360076, blue: 0.6399320168, alpha: 1)), Color(#colorLiteral(red: 1, green: 0.9535365339, blue: 0.4870987345, alpha: 1)), Color(#colorLiteral(red: 0.4871984882, green: 0.8837181631, blue: 0.6868290956, alpha: 1))])
+            let colors = Gradient(colors: [Color(#colorLiteral(red: 0.968627451, green: 0.6431372549, blue: 0.6431372549, alpha: 1)), Color(#colorLiteral(red: 0.9960784314, green: 0.7450980392, blue: 0.5490196078, alpha: 1))])
             LinearGradient(gradient: colors, startPoint: .top, endPoint: .bottom)
                 .edgesIgnoringSafeArea(.all)
             
@@ -101,7 +101,7 @@ struct LoginView: View {
                     }
                     
                     .frame(width: UIScreen.main.bounds.width - 70, height: 370)
-                    .background(Color(#colorLiteral(red: 1, green: 0.9535365339, blue: 0.4870987345, alpha: 1)))
+                    .background(Color(#colorLiteral(red: 1, green: 0.9843137255, blue: 0.7568627451, alpha: 1)))
                     .cornerRadius(20)
                     .shadow(radius: 20)
                     .offset(x: 0, y: -20)
@@ -159,7 +159,7 @@ struct LoginView: View {
                     }
                 }
                
-                .background(Color(#colorLiteral(red: 0.8103023537, green: 0.9558948291, blue: 1, alpha: 1)))
+                .background(Color(#colorLiteral(red: 0.7137254902, green: 0.8862745098, blue: 0.631372549, alpha: 1)))
                 .cornerRadius(20)
                 .frame(width: UIScreen.main.bounds.width - 40, height: 420)
                 

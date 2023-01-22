@@ -14,7 +14,7 @@ struct PhysicalGamesView: View {
     
     var body: some View {
     
-        List (model.listOne) { item in
+        List (model.physicalGamesList) { item in
             Text(item.description)
         }.font(Font.custom("Noteworthy", size: 20))
     

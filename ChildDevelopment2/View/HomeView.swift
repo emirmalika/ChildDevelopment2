@@ -36,7 +36,7 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                let colors = Gradient(colors: [Color(#colorLiteral(red: 0.8103023537, green: 0.9558948291, blue: 1, alpha: 1)), Color(#colorLiteral(red: 0.8383045374, green: 0.8378430055, blue: 1, alpha: 1)), Color(#colorLiteral(red: 1, green: 0.7675836037, blue: 0.9384834339, alpha: 1)), Color(#colorLiteral(red: 1, green: 0.7901360076, blue: 0.6399320168, alpha: 1)), Color(#colorLiteral(red: 1, green: 0.9535365339, blue: 0.4870987345, alpha: 1)), Color(#colorLiteral(red: 0.4871984882, green: 0.8837181631, blue: 0.6868290956, alpha: 1))])
+                let colors = Gradient(colors: [Color(#colorLiteral(red: 0.968627451, green: 0.6431372549, blue: 0.6431372549, alpha: 1)), Color(#colorLiteral(red: 0.9960784314, green: 0.7450980392, blue: 0.5490196078, alpha: 1))])
                 LinearGradient(gradient: colors, startPoint: .top, endPoint: .bottom)
                     .edgesIgnoringSafeArea(.all)
                 
@@ -59,7 +59,7 @@ struct HomeView: View {
                     }))
                     
                 
-                VStack(spacing: 60.0) {
+                VStack(spacing: 40.0) {
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack {
                             ForEach(0 ..< 8) { item in
@@ -68,12 +68,28 @@ struct HomeView: View {
                                     NavigationLink(destination: PhysicalGamesView(), tag: "view1", selection: $tagSelection) {
                                         EmptyView()
                                     }
-                                    NavigationLink(destination: LogicalGamesView(), tag: "view2", selection: $tagSelection) {
+                                    NavigationLink(destination: FMotorGamesView(), tag: "view2", selection: $tagSelection) {
                                         EmptyView()
                                     }
-                                    NavigationLink(destination: EmotionalGamesView(), tag: "view3", selection: $tagSelection) {
+                                    NavigationLink(destination: LogicalGamesView(), tag: "view3", selection: $tagSelection) {
                                         EmptyView()
                                     }
+                                    NavigationLink(destination: SpeechGamesView(), tag: "view4", selection: $tagSelection) {
+                                        EmptyView()
+                                    }
+                                    NavigationLink(destination: SensoryGamesView(), tag: "view5", selection: $tagSelection) {
+                                        EmptyView()
+                                    }
+                                    NavigationLink(destination: HouseholdSkGamesView(), tag: "view6", selection: $tagSelection) {
+                                        EmptyView()
+                                    }
+                                    NavigationLink(destination: CreativeGamesView(), tag: "view7", selection: $tagSelection) {
+                                        EmptyView()
+                                    }
+                                    NavigationLink(destination: EmotionalGamesView(), tag: "view8", selection: $tagSelection) {
+                                        EmptyView()
+                                    }
+                                   
                                     
                                     Button {
 //                                        self.show.toggle()
@@ -81,8 +97,18 @@ struct HomeView: View {
                                             tagSelection = "view1"
                                         } else if item == 1 {
                                             tagSelection = "view2"
-                                        } else {
+                                        } else if item == 2 {
                                             tagSelection = "view3"
+                                        } else if item == 3 {
+                                            tagSelection = "view4"
+                                        } else if item == 4 {
+                                            tagSelection = "view5"
+                                        } else if item == 5 {
+                                            tagSelection = "view6"
+                                        } else if item == 6 {
+                                            tagSelection = "view7"
+                                        } else {
+                                            tagSelection = "view8"
                                         }
 
                                     } label: {
@@ -98,7 +124,7 @@ struct HomeView: View {
                                         }
                                         
                                     }.frame(width: 240, height: 220)
-                                        .background(Color(#colorLiteral(red: 1, green: 0.9535365339, blue: 0.4870987345, alpha: 1)))
+                                        .background(Color(#colorLiteral(red: 1, green: 0.9843137255, blue: 0.7568627451, alpha: 1)))
                                         .cornerRadius(20)
                                         .shadow(radius: 5)
                                         .padding()
@@ -112,8 +138,12 @@ struct HomeView: View {
                         }
                     }
                     
+                    NavigationLink(destination: DailyGamesView(), tag: "daily", selection: $tagSelection) {
+                        EmptyView()
+                    }
+                    
                     Button {
-//                        self.show.toggle()
+                        tagSelection = "daily"
                     } label: {
                         Text("План занятий на день")
                             .font(Font.custom("Noteworthy", size: 20))
@@ -173,7 +203,7 @@ struct HomeView: View {
                         .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
                     
                 }
-                .padding(.top, 230.0)
+                .padding(.top, 300.0)
                 
                 
             }
