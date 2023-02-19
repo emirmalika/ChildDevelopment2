@@ -13,7 +13,6 @@ struct SensoryGamesView: View {
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
-    
         List (model.sensoryGamesList) { item in
             Text(item.description)
         }.font(Font.custom("Noteworthy", size: 20))
@@ -26,7 +25,6 @@ struct SensoryGamesView: View {
             }, label: {
                 Image(systemName: "arrowshape.turn.up.backward")
             }))
-        
     }
     
     init() {

@@ -32,8 +32,7 @@ struct PopOverView: View {
                         .offset(y: -150)
                     )
         }
-        .padding(.bottom, 30.0)
-        
+        .padding(.bottom, 30.0)        
     }
 }
 

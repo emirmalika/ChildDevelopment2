@@ -21,10 +21,8 @@ struct DailyGamesView: View {
     @State private var householdDescr = UserDefaults.standard.stringArray(forKey: "HouseholdDescr")
     @State private var creativeDescr = UserDefaults.standard.stringArray(forKey: "CreativeDescr")
     @State private var emotionalDescr = UserDefaults.standard.stringArray(forKey: "EmotionalDescr")
-    
-    
+
     var body: some View {
-        
         let randElem1 = physicalDescr?.randomElement() ?? ""
         let randElem2 = fMotorDescr?.randomElement() ?? ""
         let randElem3 = logicalDescr?.randomElement() ?? ""
@@ -34,8 +32,7 @@ struct DailyGamesView: View {
         let randElem7 = creativeDescr?.randomElement() ?? ""
         let randElem8 = emotionalDescr?.randomElement() ?? ""
         let gamesArr = [randElem1, randElem2, randElem3, randElem4, randElem5, randElem6, randElem7, randElem8]
-//        UserDefaults.standard.set(gamesArr, forKey: "GamesArr")
-        
+
         List {
             Text(gamesArr[0])
             Text(gamesArr[1])
@@ -46,10 +43,7 @@ struct DailyGamesView: View {
             Text(gamesArr[6])
             Text(gamesArr[7])
         }
-        
-        
         .font(Font.custom("Noteworthy", size: 20))
-    
             .navigationBarTitle("План занятий на день", displayMode: .inline)
             .navigationBarBackButtonHidden(true)
             .navigationBarItems(leading:
@@ -58,20 +52,11 @@ struct DailyGamesView: View {
             }, label: {
                 Image(systemName: "arrowshape.turn.up.backward")
             }))
-           
     }
-    
-    
-
-   
-    
+ 
     init() {
-        
         UITableView.appearance().backgroundColor = #colorLiteral(red: 1, green: 0.9843137255, blue: 0.7568627451, alpha: 1)
-       
-        
     }
-    
 }
 
 

@@ -8,7 +8,6 @@
 import Foundation
 
 struct Games: Identifiable {
-    
     var id: String
     var description: String
 }

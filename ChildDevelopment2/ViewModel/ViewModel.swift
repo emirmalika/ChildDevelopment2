@@ -29,90 +29,66 @@ class ViewModel: ObservableObject {
     @Published var creativeDescr = []
     @Published var emotionalDescr = []
    
-    
     func getData(section: String) {
-        
         let database = Firestore.firestore()
         
         database.collection(section).getDocuments { snapshot, error in
-            
             if error == nil {
                 if let snapshot = snapshot {
-                    
                     DispatchQueue.main.async { 
-                        if section == "physicalGames" {
-                            
+                        switch section {
+                        case "physicalGames":
                             self.physicalGamesList = snapshot.documents.map { data in
                                 self.physicalDescr.append(data["descr"] as! String)
                                 UserDefaults.standard.set(self.physicalDescr, forKey: "PhysicalDescr")
                                 return Games(id: data.documentID, description: data["descr"] as? String ?? "")
                             }
-                           
-                        } else if section == "fMotorGames" {
-                            
+                        case "fMotorGames":
                             self.fMotorGamesList = snapshot.documents.map { data in
                                 self.fMotorDescr.append(data["descr"] as! String)
                                 UserDefaults.standard.set(self.fMotorDescr, forKey: "FMotorDescr")
                                 return Games(id: data.documentID, description: data["descr"] as? String ?? "")
                             }
-                            
-                        } else if section == "logicalGames" {
+                        case "logicalGames":
                             self.logicalGamesList = snapshot.documents.map { data in
                                 self.logicalDescr.append(data["descr"] as! String)
                                 UserDefaults.standard.set(self.logicalDescr, forKey: "LogicalDescr")
                                 return Games(id: data.documentID, description: data["descr"] as? String ?? "")
                             }
-                            
-                        } else if section == "speechGames" {
-                            
+                        case "speechGames":
                             self.speechGamesList = snapshot.documents.map { data in
                                 self.speechDescr.append(data["descr"] as! String)
                                 UserDefaults.standard.set(self.speechDescr, forKey: "SpeechDescr")
                                 return Games(id: data.documentID, description: data["descr"] as? String ?? "")
                             }
-                        
-                        } else if section == "sensoryGames" {
-                        
+                        case "sensoryGames":
                             self.sensoryGamesList = snapshot.documents.map { data in
                                 self.sensoryDescr.append(data["descr"] as! String)
                                 UserDefaults.standard.set(self.sensoryDescr, forKey: "SensoryDescr")
                                 return Games(id: data.documentID, description: data["descr"] as? String ?? "")
                             }
-                            
-                        } else if section == "householdGames" {
-                            
+                        case "householdGames":
                             self.householdGamesList = snapshot.documents.map { data in
                                 self.householdDescr.append(data["descr"] as! String)
                                 UserDefaults.standard.set(self.householdDescr, forKey: "HouseholdDescr")
                                 return Games(id: data.documentID, description: data["descr"] as? String ?? "")
                             }
-                            
-                        } else if section == "creativeGames" {
-                            
+                        case "creativeGames":
                             self.creativeGamesList = snapshot.documents.map { data in
                                 self.creativeDescr.append(data["descr"] as! String)
                                 UserDefaults.standard.set(self.creativeDescr, forKey: "CreativeDescr")
                                 return Games(id: data.documentID, description: data["descr"] as? String ?? "")
                             }
-                            
-                        } else {
-                            
+                        default:
                             self.emotionalGamesList = snapshot.documents.map { data in
                                 self.emotionalDescr.append(data["descr"] as! String)
                                 UserDefaults.standard.set(self.emotionalDescr, forKey: "EmotionalDescr")
                                 return Games(id: data.documentID, description: data["descr"] as? String ?? "")
                             }
-                            
                         }
-    
                     }
                 }
             }
-            
         }
     }
-    
-    
-    
-    
 }

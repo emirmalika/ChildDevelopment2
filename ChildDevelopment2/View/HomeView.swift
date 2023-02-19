@@ -32,14 +32,12 @@ struct HomeView: View {
     @State private var show = false
     @State private var tagSelection: String? = nil
     
-    
     var body: some View {
         NavigationView {
             ZStack {
                 let colors = Gradient(colors: [Color(#colorLiteral(red: 0.968627451, green: 0.6431372549, blue: 0.6431372549, alpha: 1)), Color(#colorLiteral(red: 0.9960784314, green: 0.7450980392, blue: 0.5490196078, alpha: 1))])
                 LinearGradient(gradient: colors, startPoint: .top, endPoint: .bottom)
                     .edgesIgnoringSafeArea(.all)
-                
                     .navigationBarTitle("Развивающие игры для детей", displayMode: .inline)
                     .navigationBarItems(trailing:
                                             Button(action: {
@@ -57,14 +55,11 @@ struct HomeView: View {
                     }, label: {
                         Image(systemName: "x.square")
                     }))
-                    
-                
                 VStack(spacing: 40.0) {
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack {
                             ForEach(0 ..< 8) { item in
                                 GeometryReader { geometry in
-                                    
                                     NavigationLink(destination: PhysicalGamesView(), tag: "view1", selection: $tagSelection) {
                                         EmptyView()
                                     }
@@ -89,28 +84,25 @@ struct HomeView: View {
                                     NavigationLink(destination: EmotionalGamesView(), tag: "view8", selection: $tagSelection) {
                                         EmptyView()
                                     }
-                                   
-                                    
                                     Button {
-//                                        self.show.toggle()
-                                        if item == 0 {
+                                        switch item {
+                                        case 0:
                                             tagSelection = "view1"
-                                        } else if item == 1 {
+                                        case 1:
                                             tagSelection = "view2"
-                                        } else if item == 2 {
+                                        case 2:
                                             tagSelection = "view3"
-                                        } else if item == 3 {
+                                        case 3:
                                             tagSelection = "view4"
-                                        } else if item == 4 {
+                                        case 4:
                                             tagSelection = "view5"
-                                        } else if item == 5 {
+                                        case 5:
                                             tagSelection = "view6"
-                                        } else if item == 6 {
+                                        case 6:
                                             tagSelection = "view7"
-                                        } else {
+                                        default:
                                             tagSelection = "view8"
                                         }
-
                                     } label: {
                                         VStack {
                                             Image(self.sectionss[item])
@@ -122,26 +114,19 @@ struct HomeView: View {
                                                 .bold()
                                                 .foregroundColor(.black)
                                         }
-                                        
                                     }.frame(width: 240, height: 220)
                                         .background(Color(#colorLiteral(red: 1, green: 0.9843137255, blue: 0.7568627451, alpha: 1)))
                                         .cornerRadius(20)
                                         .shadow(radius: 5)
                                         .padding()
                                         .rotation3DEffect(Angle(degrees: geometry.frame(in: .global).minX / -20), axis: (x: 0, y: 10, z: 0))
-                                        
-                                    
                                 }.frame(width: 270, height: 250)
-                                    
                             }
-                            
                         }
                     }
-                    
                     NavigationLink(destination: DailyGamesView(), tag: "daily", selection: $tagSelection) {
                         EmptyView()
                     }
-                    
                     Button {
                         tagSelection = "daily"
                     } label: {
@@ -154,64 +139,39 @@ struct HomeView: View {
                             .border(Color.gray, width: 3)
                             .cornerRadius(20)
                     }
-                    
-                    
                     VStack(spacing: 1.0) {
-                        
                         VStack(spacing: 5.0) {
-                            
                             Text(citates[textC])
                                 .font(Font.custom("Noteworthy", size: 19))
-                            
                                 .multilineTextAlignment(.center)
                                 .frame(width: UIScreen.main.bounds.width - 40, height: 75)
                                 .animation(Animation.easeInOut(duration: 2))
-                            
                             txtOne
                                 .font(Font.custom("Noteworthy", size: 17))
                                 .bold()
                                 .multilineTextAlignment(.leading)
-                            
                         }
-                        
-                        
                         Button {
-                            
                             textC += 1
                             if textC > 9 {
                                 textC = 0
                             }
-                            
-                            
-                            
-                            
-                            
                         } label: {
-                            
-                            
                             Image("next")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 64, height: 64)
                         }
                     }
-                    
-                    
-                    
                     PopOverView()
                         .offset(y: showPopOver ? 0 : 600)
                         .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
-                    
                 }
                 .padding(.top, 300.0)
-                
-                
             }
         }
-        
     }
 }
-
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {

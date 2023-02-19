@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6878E8CD684D8A20055D2682 /* Pods_ChildDevelopment2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B4A430DF5D27696986BCA56 /* Pods_ChildDevelopment2.framework */; };
-		8F454837296C06EC00B3A451 /* Daily.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F454836296C06EB00B3A451 /* Daily.swift */; };
-		8F454872296DABB300B3A451 /* GamesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F454871296DABB300B3A451 /* GamesRowView.swift */; };
 		8F5DE29C295F1FD6007A53F9 /* ChildDevelopment2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5DE29B295F1FD6007A53F9 /* ChildDevelopment2App.swift */; };
 		8F5DE29E295F1FD6007A53F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5DE29D295F1FD6007A53F9 /* ContentView.swift */; };
 		8F5DE2A0295F1FDA007A53F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F5DE29F295F1FDA007A53F9 /* Assets.xcassets */; };
@@ -36,8 +34,6 @@
 		2BE8A25221DC17B4246517C1 /* Pods-ChildDevelopment2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChildDevelopment2.debug.xcconfig"; path = "Target Support Files/Pods-ChildDevelopment2/Pods-ChildDevelopment2.debug.xcconfig"; sourceTree = "<group>"; };
 		6B4A430DF5D27696986BCA56 /* Pods_ChildDevelopment2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChildDevelopment2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		832E2B466BF78C74C2F66F00 /* Pods-ChildDevelopment2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChildDevelopment2.release.xcconfig"; path = "Target Support Files/Pods-ChildDevelopment2/Pods-ChildDevelopment2.release.xcconfig"; sourceTree = "<group>"; };
-		8F454836296C06EB00B3A451 /* Daily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily.swift; sourceTree = "<group>"; };
-		8F454871296DABB300B3A451 /* GamesRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesRowView.swift; sourceTree = "<group>"; };
 		8F5DE298295F1FD6007A53F9 /* ChildDevelopment2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChildDevelopment2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F5DE29B295F1FD6007A53F9 /* ChildDevelopment2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildDevelopment2App.swift; sourceTree = "<group>"; };
 		8F5DE29D295F1FD6007A53F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -124,7 +120,6 @@
 				8F759ADF29687EF0001718F4 /* SpeechGamesView.swift */,
 				8F759AE329687F74001718F4 /* HouseholdSkGamesView.swift */,
 				8F8A1E43296AB7A4001FBDEC /* DailyGamesView.swift */,
-				8F454871296DABB300B3A451 /* GamesRowView.swift */,
 			);
 			path = Games;
 			sourceTree = "<group>";
@@ -133,7 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				8F7305C3296720D000B33897 /* Games.swift */,
-				8F454836296C06EB00B3A451 /* Daily.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -316,9 +310,7 @@
 				8F7305B629657FEA00B33897 /* PopOverView.swift in Sources */,
 				8F7305C229671FBF00B33897 /* ViewModel.swift in Sources */,
 				8F759ADE29687EB5001718F4 /* CreativeGamesView.swift in Sources */,
-				8F454872296DABB300B3A451 /* GamesRowView.swift in Sources */,
 				8F759ADB29687E5B001718F4 /* FMotorGamesView.swift in Sources */,
-				8F454837296C06EC00B3A451 /* Daily.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
